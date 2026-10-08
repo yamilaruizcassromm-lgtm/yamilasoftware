@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo que aprendí del video - Yamila Ruiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Carga del SDK oficial de Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Lo que aprendí del video</h1>
+            <p class="subtitle">Trabajo Práctico: Video y Página Web</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#datos">Datos</a></li>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#conceptos">Conceptos</a></li>
+                <li><a href="#cuestionario">Cuestionario</a></li>
+                <li><a href="#aplicacion">Aplicación Práctica</a></li>
+                <li><a href="#conclusion">Conclusión</a></li>
+                <li><a href="#fuentes">Fuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- Sección Datos -->
+        <section id="datos" class="card">
+            <h2>Datos del Estudiante</h2>
+            <ul>
+                <li><strong>Estudiante:</strong> Yamila Ruiz</li>
+                <li><strong>Curso/Sección:</strong> 2.º BTI</li>
+                <li><strong>Asignatura:</strong> Software / Desarrollo Web</li>
+                <li><strong>Colegio:</strong> Colegio Nacional EMD Asunción Escalada</li>
+            </ul>
+        </section>
+
+        <!-- Sección Introducción -->
+        <section id="introduccion" class="card">
+            <h2>Introducción</h2>
+            <p>En este trabajo práctico se analiza el material audiovisual sobre <strong>Supabase</strong>, un servicio de <em>Backend as a Service (BaaS)</em> de código abierto basado en PostgreSQL. A lo largo del documento se detallan las respuestas al cuestionario planteado, los conceptos clave comprendidos y una implementación práctica integrando Supabase con desarrollo web estándar.</p>
+        </section>
+
+        <!-- Sección Conceptos Fundamentales -->
+        <section id="conceptos" class="card">
+            <h2>Conceptos Fundamentales</h2>
+            <div class="grid-concepts">
+                <div class="concept-item">
+                    <h3>BaaS</h3>
+                    <p>Backend as a Service: plataforma que administra la infraestructura de base de datos y servidor en la nube.</p>
+                </div>
+                <div class="concept-item">
+                    <h3>PostgreSQL</h3>
+                    <p>Base de datos relacional potente de código abierto que sirve de motor principal para Supabase.</p>
+                </div>
+                <div class="concept-item">
+                    <h3>REST API</h3>
+                    <p>Interfaz autogenerada por la plataforma para consultar datos mediante métodos HTTP estándar.</p>
+                </div>
+                <div class="concept-item">
+                    <h3>RLS</h3>
+                    <p>Row Level Security: mecanismo para restringir las filas que un usuario puede consultar o modificar.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Cuestionario -->
+        <section id="cuestionario" class="card">
+            <h2>Cuestionario Resuelto (12 Preguntas)</h2>
+            <ol class="questionnaire">
+                <li>
+                    <strong>1. ¿Cuál es el tema principal del video? Explica de qué trata.</strong>
+                    <p>El tema principal es Supabase, una plataforma Backend as a Service (BaaS) de código abierto que actúa como alternativa a Firebase, permitiendo crear bases de datos en la nube y acceder a ellas vía REST API.</p>
+                </li>
+                <li>
+                    <strong>2. ¿Qué problema o necesidad tecnológica se aborda?</strong>
+                    <p>Resuelve la complejidad de tener que programar y mantener un servidor backend completo desde cero para gestionar datos y autenticación en aplicaciones web o móviles.</p>
+                </li>
+                <li>
+                    <strong>3. ¿Cuáles son los cinco conceptos más importantes? Define cada uno.</strong>
+                    <p>BaaS (Backend como servicio), PostgreSQL (motor de base de datos), REST API (endpoints autogenerados), Anon Key (clave de acceso seguro en cliente) y RLS (seguridad por filas).</p>
+                </li>
+                <li>
+                    <strong>4. ¿Qué herramientas, programas o tecnologías se mencionan y para qué sirven?</strong>
+                    <p>Supabase Dashboard (administración de proyectos), PostgreSQL (gestión relacional), JavaScript/Supabase SDK (conexión desde el frontend) y REST Client en VS Code (prueba de endpoints HTTP).</p>
+                </li>
+                <li>
+                    <strong>5. ¿Qué procedimientos o pasos se explican? Preséntalos en orden.</strong>
+                    <p>1. Crear proyecto en Supabase. 2. Diseñar la tabla en el SQL Editor/Dashboard. 3. Insertar registros. 4. Obtener URL y Anon Key. 5. Conectar y realizar peticiones desde la app cliente.</p>
+                </li>
+                <li>
+                    <strong>6. ¿Qué ejemplos prácticos aparecen? Explica uno detalladamente.</strong>
+                    <p>La creación de una tabla de tareas o productos, definiendo tipos de datos como textos y booleanos, e insertando filas para luego consultarlas mediante formato JSON a través de una petición GET.</p>
+                </li>
+                <li>
+                    <strong>7. ¿Qué conocimientos previos son necesarios para comprender lo explicado?</strong>
+                    <p>Conceptos básicos de HTML, JavaScript, sintaxis básica de consultas SQL y principios de funcionamiento del protocolo HTTP/REST.</p>
+                </li>
+                <li>
+                    <strong>8. ¿Qué ventajas o beneficios ofrece la tecnología o procedimiento?</strong>
+                    <p>Acelera sustancialmente el desarrollo, elimina la necesidad de configurar servidores manuales, utiliza un estándar abierto (PostgreSQL) y genera las APIs automáticamente.</p>
+                </li>
+                <li>
+                    <strong>9. ¿Qué dificultades, errores o precauciones deben considerarse?</strong>
+                    <p>Tener cuidado con la exposición accidental de claves de servicio y configurar adecuadamente las políticas de seguridad RLS para evitar bloqueos de peticiones.</p>
+                </li>
+                <li>
+                    <strong>10. ¿Cómo aplicarías lo aprendido en un proyecto informático real?</strong>
+                    <p>Desarrollando una aplicación web interactiva que almacene datos de usuarios de manera persistente en la nube mediante peticiones asíncronas a Supabase.</p>
+                </li>
+                <li>
+                    <strong>11. ¿Qué parte del video consideras más importante y por qué?</strong>
+                    <p>La integración de la base de datos con las peticiones REST y las API Keys, ya que demuestra la rapidez con la que se pasa de una tabla de base de datos a un consumo de datos real.</p>
+                </li>
+                <li>
+                    <strong>12. ¿Qué conocimientos nuevos adquiriste y cómo los explicarías a otra persona?</strong>
+                    <p>Entendí cómo funcionan los servicios BaaS. Explicaría que Supabase es una herramienta que nos exime de programar un servidor completo al ofrecernos una base de datos con API lista para usar.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Sección Aplicación Práctica -->
+        <section id="aplicacion" class="card">
+            <h2>Aplicación Práctica con Supabase</h2>
+            <p>A continuación se muestra la integración en tiempo real del frontend con una tabla creada en Supabase mediante el cliente de JavaScript:</p>
+            <div class="demo-box">
+                <button id="btn-cargar">Cargar Datos de Supabase</button>
+                <div id="resultado-supabase">Haz clic en el botón para consultar la base de datos...</div>
+            </div>
+        </section>
+
+        <!-- Sección Conclusión -->
+        <section id="conclusion" class="card">
+            <h2>Conclusión Personal</h2>
+            <p>El estudio de tecnologías como Supabase resulta sumamente enriquecedor para nuestra formación en el Bachillerato Técnico en Informática. Comprender el funcionamiento de la arquitectura BaaS y las bases de datos en la nube nos brinda herramientas modernas para construir proyectos web completos de forma rápida, eficiente y profesional.</p>
+        </section>
+
+        <!-- Sección Fuentes -->
+        <section id="fuentes" class="card">
+            <h2>Fuentes y Referencias</h2>
+            <ul>
+                <li><strong>Video Tutorial:</strong> <a href="https://www.youtube.com/watch?v=pi33WDrgfpI" target="_blank">Supabase, Tutorial Práctico y Overview (REST API) - Fazt Code</a></li>
+                <li><strong>Documentación Oficial:</strong> <a href="https://supabase.com/docs" target="_blank">Documentación de Supabase</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Yamila Ruiz | Colegio Nacional EMD Asunción Escalada</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
